@@ -1,0 +1,260 @@
+.root {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  font-family: Inter, 'Arial', sans-serif;
+  background-color: #2a2c2f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px auto 0;
+  max-width: 1184px;
+}
+
+.header__logo {
+  width: 176px;
+  height: 52px;
+  background-image: url(../../images/header-logo.svg);
+}
+
+.header__lang-links {
+  font-size: 24px;
+  line-height: 1.17;
+  display: flex;
+  align-items: center;
+}
+
+.header__lang-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.header__lang-link:first-of-type {
+  margin-right: 18px;
+  text-decoration: underline;
+}
+
+.lead {
+  max-width: 984px;
+  margin: 56px auto 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.lead__title {
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 1.04;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.lead__subtitle {
+  font-size: 30px;
+  line-height: 1.2;
+  max-width: 640px;
+  margin: 36px auto 0;
+}
+
+.lead__image {
+  max-width: 100%;
+  margin: 64px 0 0;
+}
+
+.lead__caption {
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: start;
+  max-width: 158px;
+  max-height: 14px;
+  margin: 8px auto 0 0;
+}
+
+.intro {
+  max-width: 690px;
+  margin: 92px auto 0 148px;
+  color:#FFFFFF;
+}
+
+.intro__title {
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  margin: 0;
+}
+
+.intro__text {
+  font-size: 16px;
+  line-height: 1.63;
+  margin: 37px auto 0 ;
+}
+
+.intro__list {
+  list-style-type: none;
+  margin: 37px auto 0 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.intro__span-accent {
+  font-weight: 700;
+}
+
+.photo-grid {
+  display: grid;
+  max-width: 1184px;
+  margin: 91px 48px 0;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 16px;
+}
+
+.photo-grid__item {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.places {
+  max-width: 984px;
+  margin: 92px auto 0;
+  color: #FFFFFF;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: 1fr 460px;
+  gap: 48px 40px;
+}
+
+.place:not(:first-child) {
+  margin: 80px 0 0;
+}
+
+.place__title {
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  margin: 0;
+}
+
+.place__website {
+  align-self: end;
+}
+
+.place__url-heading {
+  color: #AAAAAA;
+  transition: opacity 0.4s ease-in;
+}
+
+.place__link {
+  color: #FFFFFF;
+  transition: opacity 0.4s ease-in;
+}
+
+.place__link:hover {
+  opacity: 0.8;
+}
+
+.place__image {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.place__paragraph {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.63;
+}
+
+.place__paragraph:nth-child(2n) {
+  margin: 26px 0 0;
+}
+
+.cover__link {
+  display: block;
+  position: relative;
+  background-image: url(../../images/cover-trains.jpg);
+  background-size: cover;
+  max-width: 1184px;
+  box-sizing: border-box;
+  margin: 92px auto 0;
+  padding: 245px 312px;
+  color:#FFFFFF;
+  text-decoration: none;
+  text-align: center;
+}
+
+.cover__link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #2a2c2f;
+  opacity: 0.3;
+  transition: opacity 0.4s ease-in;
+}
+
+.cover__link:hover:before {
+  opacity: 0.8;
+}
+
+.cover__title {
+  position: relative;
+  max-width: 560px;
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+}
+
+.cover__subtitle {
+  position: relative;
+  max-width: 360px;
+  margin: 32px auto 0;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.footer {
+  display: flex;
+  max-width: 1184px;
+  justify-content: space-between;
+  margin: 92px auto 24px;
+}
+
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.12;
+  transition: opacity 0.4s ease-in;
+}
+
+.footer__link:not(:first-child) {
+  margin: 0 0 0 18px;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.footer__copyright {
+  color: #FFFFFF;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.14;
+}
