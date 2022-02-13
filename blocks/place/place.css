@@ -23,9 +23,9 @@
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 565px) {
   .place {
-    grid-template-columns: 400px;
+    grid-template-columns: 330px;
     gap: 40px;
   }
 }
