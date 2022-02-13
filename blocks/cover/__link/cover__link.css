@@ -6,7 +6,7 @@
   max-width: 1184px;
   box-sizing: border-box;
   margin: 92px auto 0;
-  padding: 245px 312px;
+  padding: 245px 0;
   color:#FFFFFF;
   text-decoration: none;
   text-align: center;
@@ -27,4 +27,46 @@
 
 .cover__link:hover:before {
   opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .cover__link {
+    margin: 92px 0 0;
+    padding: 195px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .cover__link {
+    margin: 92px 0 0;
+    padding: 195px 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .cover__link {
+    margin: 90px 0 0;
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .cover__link {
+    margin: 66px 0 0;
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .cover__link {
+    margin: 66px 0 0;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .cover__link {
+    margin: 66px 0 0;
+    padding: 33px 0;
+  }
 }

@@ -1,3 +1,9 @@
 .place__url-heading {
   color: #AAAAAA;
 }
+
+@media (max-width: 380px) {
+  .place__url-heading {
+    margin: 0 0 0 16px;
+  }
+}
