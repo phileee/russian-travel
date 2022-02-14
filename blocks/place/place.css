@@ -48,6 +48,7 @@
 @media (max-width: 380px) {
   .place {
     grid-template-columns: 320px;
+    margin: 0 calc((100% - 320px) / 2);
     gap: 28px;
   }
 }
@@ -61,5 +62,12 @@
 @media (max-width: 565px) {
   .place:not(:first-child) {
     margin: 50px calc((100% - 330px) / 2);
+  }
+}
+
+@media (max-width: 380px) {
+  .place:not(:first-child) {
+    margin: 50px calc((100% - 320px) / 2);
+    gap: 28px;
   }
 }
